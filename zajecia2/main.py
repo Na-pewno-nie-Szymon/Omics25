@@ -69,6 +69,7 @@ def Quality1(path: str):
     plt.ylabel("Principal Component 2")
     plt.title("PCA of Metabolomics Data")
     plt.legend()
+    plt.savefig('/home/shimmy/Documents/bioinf/Omics25/zajecia2/q1.png')
     plt.show()
 
 def Quality2(path: str):
@@ -110,11 +111,12 @@ def Quality2(path: str):
     plt.ylabel("Principal Component 2")
     plt.title("PCA of Metabolomics Data - Quality2")
     plt.legend()
+    plt.savefig('/home/shimmy/Documents/bioinf/Omics25/zajecia2/q2.png')
     plt.show()
 
 if __name__=="__main__":
-    Q1_PATH = '/home/szymon/Documents/analizy_omiczne/zajecia2/Metabolomika_Quality1.xlsx'
-    Q2_PATH = '/home/szymon/Documents/analizy_omiczne/zajecia2/Metabolomika_Quality2.xlsx'
+    Q1_PATH = '/home/shimmy/Documents/bioinf/Omics25/zajecia2/Metabolomika_Quality1.xlsx'
+    Q2_PATH = '/home/shimmy/Documents/bioinf/Omics25/zajecia2/Metabolomika_Quality2.xlsx'
 
     Quality1(path=Q1_PATH)
     Quality2(path=Q2_PATH)
